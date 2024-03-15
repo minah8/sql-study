@@ -280,7 +280,7 @@ ORDER BY total DESC;
 SELECT 
     d.department_id, d.department_name, d.manager_id,
     loc.street_address, loc.postal_code,
-    AVG(e.salary)
+    NVL(TRUNC(AVG(e.salary)), 0)
 FROM departments d
 LEFT JOIN employees e
 ON d.department_id = e.department_id
