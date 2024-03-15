@@ -129,7 +129,7 @@ UPDATE view_emp_test
 SET departmnet_id = 100
 WHERE employee_id = 107;
  
--- 읽기 변용 뷰 -> WITH READ ONLY (DML, SELECT만 허용)
+-- 읽기 전용 뷰 -> WITH READ ONLY (DML, SELECT만 허용)
 
 CREATE OR REPLACE VIEW view_emp_test AS (
     SELECT
