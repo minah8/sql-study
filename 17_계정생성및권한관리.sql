@@ -33,18 +33,18 @@ GRANT SELECT ON hr.departments TO user1;
 INSERT INTO departments
 VALUES (300, 'test' ,100 ,1800);
 
-GRANT CTEAE, CPMMTCT BDA TO user1;
+GRANT CREATE TABLE TO user1;
 
-GRANT, RESOURCE, CONNECT, DBA TO user1;
+GRANT RESOURCE, CONNECT, DBA TO user1;
 
-GRANT, RESOURCE, CONNECT, DBA TO user1;
+REVOKE RESOURCE, CONNECT, DBA FROM user1;
 
 
 -- 테이블이 저장되는 장소인 테이블 스페이스를 설정하는 코드
--- 기본적으로 제공되는 user 테이블 스페이스의 사용량을 무제한으로 정정.
+-- 기본적으로 제공되는 user 테이블 스페이스의 사용량을 무제한으로 지정.
 ALTER USER user1
-DEPAULT TABLESPACE users;
-QUOTA UNLUMITED ON users;
+DEFAULT TABLESPACE users;
+QUOTA UNLIMITED ON users;
 
 -- 사용자 계정 삭제
 -- DROP USER [유저이름] CASCADE;
