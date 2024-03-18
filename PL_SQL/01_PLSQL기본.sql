@@ -17,8 +17,8 @@ DECLARE -- 변수를 선언하는 구간 (선언부)
 BEGIN -- 코드를 실행하는 구간 (실행부)
 
     emp_num := 10; -- 대입 연산자 :=
-    DBMS_OUTPUT.put_line(emp_num);
-    DBMS_OUTPUT.put_line('Hello pl/sql!');
+    dbms_OUTPUT.put_line(emp_num);
+    dbms_OUTPUT.put_line('Hello pl/sql!');
 
 END; -- PL/SQL이 끝나는 구간 (종료부)
 
