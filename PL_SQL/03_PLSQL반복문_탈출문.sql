@@ -106,7 +106,7 @@ CREATE SEQUENCE b_seq
 DECLARE
     v_num NUMBER := 1;
 BEGIN
-    WHILE b_num <= 300
+    WHILE v_num <= 300
     LOOP
         INSERT INTO board
         VALUES(b_seq.NEXTVAL, 'test'||v_num, 'title'||v_num);
@@ -116,4 +116,6 @@ END;
 
 SELECT * FROM board
 ORDER BY bno DESC;
+
+COMMIT;
 
