@@ -23,7 +23,7 @@ BEGIN
 
 END;
 
-INSERT INTO tbl_test VALUES(3, '¹Ú¿µÈñ'); -- Æ®¸¯ µ¿ÀÛ x
+INSERT INTO tbl_test VALUES(3, '¹Ú¿µÈñ'); -- Æ®¸®°Å µ¿ÀÛ x
 UPDATE tbl_test SET text = '±è°³¶Ë' WHERE id = 1;
 DELETE FROM tbl_test WHERE id = 2;
 
